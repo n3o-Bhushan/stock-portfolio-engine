@@ -55,7 +55,9 @@ ROOT_URLCONF = 'StockEngine.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [#'/Users/seemarohilla/Desktop/CMPE285/stock-portfolio-engine/Engine/templates'
+        os.path.join(BASE_DIR, 'Engine/templates')
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,7 +122,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, 'template'),
-
-)
+STATICFILES_DIRS = [
+  #  "/Users/seemarohilla/Desktop/CMPE285/stock-portfolio-engine/static",
+    os.path.join(BASE_DIR, 'static')
+]

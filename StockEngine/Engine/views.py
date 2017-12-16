@@ -8,7 +8,7 @@ from django.shortcuts import render_to_response
 
 def my_view(request):
     # View code here...
-     return render(request, 'Engine/login.html',{})
-    # return render_to_response("Engine/template/stock/login.html")
+     return render(request, "index.html",{})
+ 
 
 
